@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shine</title>
+    <link rel="stylesheet" href="styles_main.css" />
+  </head>
+  <body>
+    <script src="snine.js"></script>
+    <img src="image/image_logo.png" class="logo" />
+
+    <header>
+      <div class="container">
+        <nav class="header-nav">
+          <div class="burger-menu" id="burgerMenu"></div>
+
+          <div class="nav-links">
+            <a href="#" class="nav-link">Главная</a>
+            <a href="#" class="nav-link" id="catalogLink">Каталог</a>
+            <a href="#collections" class="nav-link">Коллекции</a>
+          </div>
+
+          <div class="header-icons">
+            <a href="#" class="icon-link" id="wishlistIcon">
+              <img
+                src="image/like_header.png"
+                alt="Избранное"
+                class="header-icon"
+              />
+            </a>
+            <a href="#" class="icon-link" id="cartIcon">
+              <img src="image/bascet.png" alt="Корзина" class="header-icon" />
+            </a>
+          </div>
+        </nav>
+        <div class="catalog-sidebar" id="catalogSidebar">
+          <div class="sidebar-header">
+            <h3>Каталог</h3>
+            <button class="close-sidebar" id="closeSidebar">&times;</button>
+          </div>
+          <ul class="catalog-menu">
+            <li><a href="./ring_katalog.html">Кольца</a></li>
+            <li><a href="./earrings_katalog.html">Серьги</a></li>
+            <li><a href="./bracelet_katalog.html">Браслеты</a></li>
+          </ul>
+        </div>
+
+        <section class="collection-section">
+          <img
+            src="image/main_image_header.png"
+            class="collection-image"
+            alt="SKLV Collection"
+          />
+          <div class="collection-content">
+            <h1 class="collection-title">KOЛЛЕКЦИЯ SKLV</h1>
+            <button class="open-collection-btn">Открыть коллекцию</button>
+          </div>
+        </section>
+      </div>
+    </header>
+    <main>
+      <section class="categories-section">
+        <h2 class="categories-title">Каталог</h2>
+        <div class="categories-container">
+          <div class="category-card">
+            <a href="./ring_katalog.html">
+              <img
+                src="image/ring_rectangle.png"
+                alt="Кольца"
+                class="category-image"
+              />
+              <div class="category-name">Кольца</div>
+            </a>
+          </div>
+          <div class="category-card">
+            <a href="./earrings_katalog.html">
+              <img
+                src="image/earrings_rectangle.png"
+                alt="Серьги"
+                class="category-image"
+              />
+              <div class="category-name">Серьги</div>
+            </a>
+          </div>
+          <div class="category-card">
+            <a href="./bracelet_katalog.html">
+              <img
+                src="image/catalog_bracelets.png"
+                alt="Браслеты"
+                class="category-image"
+              />
+              <div class="category-name">Браслеты</div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="collections" class="collections-section">
+        <div class="container_collections">
+          <h2 id="collections" class="collections">Коллекции</h2>
+          <ul class="collections_link">
+            <li><a href="#Royal" class="active">Royal</a></li>
+            <li><a href="#Le_Chic">Le Chic</a></li>
+            <li><a href="#Russe">Russe</a></li>
+          </ul>
+
+          <div class="slide active" id="Royal">
+            <a href="#">
+              <img
+                src="image/Royal_image_main.png"
+                class="image_main"
+                alt="Коллекция Royal"
+              />
+              <img
+                src="image/Royal_image_ring.png"
+                class="image_ring"
+                alt="Кольцо Royal"
+              />
+              <img
+                src="image/Royal_image_secondary.png"
+                class="image_secondary"
+                alt="Дополнительное изображение Royal"
+              />
+            </a>
+          </div>
+
+          <div class="slide" id="Le_Chic">
+            <a href="#">
+              <img
+                src="image/Le_Chic_image_main.png"
+                class="image_main"
+                alt="Коллекция Le Chic"
+              />
+              <img
+                src="image/Le_Chic_image_ring.png"
+                class="image_ring"
+                alt="Кольцо Le Chic"
+              />
+              <img
+                src="image/Le_Chic_image_secondary.png"
+                class="image_secondary"
+                alt="Дополнительное изображение Le Chic"
+              />
+            </a>
+          </div>
+
+          <div class="slide" id="Russe">
+            <a href="#">
+              <img
+                src="image/Russe_image_main.png"
+                class="image_main"
+                alt="Коллекция Russe"
+              />
+              <img
+                src="image/Russe_image_ring.png"
+                class="image_ring"
+                alt="Кольцо Russe"
+              />
+              <img
+                src="image/Russe_image_secondary.png"
+                class="image_secondary"
+                alt="Дополнительное изображение Russe"
+              />
+            </a>
+          </div>
+
+          <div class="slider-dots">
+            <div class="dot active" data-slide="Royal"></div>
+            <div class="dot" data-slide="Le_Chic"></div>
+            <div class="dot" data-slide="Russe"></div>
+          </div>
+        </div>
+      </section>
+      <section class="popular-section">
+        <h2 class="section-title">Популярное</h2>
+
+        <div class="products-container">
+          <div class="product-card">
+            <a href="./earrings_popular.html">
+              <img
+                src="image/earrings_popular_NUM1.png"
+                alt="Золотые серьги с бриллиантами"
+                class="product-image"
+              />
+              <div class="product-info">
+                <p class="product-name">Золотые серьги с бриллиантами</p>
+                <p class="product-price">21 995 ₽</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="product-card">
+            <a href="./ring_popular.html">
+              <img
+                src="image/ring_popular_NUM2.png"
+                alt="Золотое кольцо"
+                class="product-image"
+              />
+              <div class="product-info">
+                <p class="product-name">Золотое кольцо с бриллиантом</p>
+                <p class="product-price">18 500 ₽</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="product-card">
+            <a href="./bracelet_popular.html">
+              <img
+                src="image/bracelet_popular_NUM3.png"
+                alt="Золотой браслет"
+                class="product-image"
+              />
+              <div class="product-info">
+                <p class="product-name">Золотой браслет</p>
+                <p class="product-price">32 000 ₽</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="product-card">
+            <a href="./earrings2_popular.html">
+              <img
+                src="image/earrings_popular_NUM4.png"
+                alt="Серьги с сапфирами"
+                class="product-image"
+              />
+              <div class="product-info">
+                <p class="product-name">Серьги с сапфирами</p>
+                <p class="product-price">25 750 ₽</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal-cart" id="cartModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Корзина</h3>
+          <button class="close-modal" id="closeCartModal">&times;</button>
+        </div>
+        <div class="modal-body" id="cartItems">
+          <p class="empty-cart-message">корзина пуста</p>
+          <img src="image/basket_modal_image.png" />
+        </div>
+        <div class="modal-footer">
+          <div class="cart-total"></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-wishlist" id="wishlistModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Избранное</h3>
+          <button class="close-modal" id="closeWishlistModal">&times;</button>
+        </div>
+        <div class="modal-body" id="wishlistItems">
+          <p class="empty-wishlist-message">В избранном пока ничего нет</p>
+          <img src="image/modal_like_image.png" alt="Пустое избранное" />
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Каталог</h3>
+          <ul>
+            <li><a href="#">Серьги</a></li>
+            <li><a href="#">Кольца</a></li>
+            <li><a href="#">Браслеты</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Контакты</h3>
+          <ul>
+            <li><p>89022444582</p></li>
+            <li><p>Bless@gmail,com</p></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <li style="margin-top: 15px">
+            <a href="#">
+              <img src="image/telegram_icon.png" width="14%" />
+            </a>
+            <a href="#">
+              <img src="image/VK_icon" width="14%" />
+            </a>
+          </li>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
